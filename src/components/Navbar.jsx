@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { BsFillCartFill } from 'react-icons/bs'
 
 const Navbar = () => {
@@ -28,6 +28,14 @@ const Navbar = () => {
       <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full">
         <BsFillCartFill size={25} className="mr-2"/> Cart
       </button>
+
+      {/* mobile menu */}
+      <div className="bg-black/80 top-0 absolute h-screen w-full z-10 left-0"></div>
+
+      {/* side drawer menu */}
+      <div className="absolute w-[300px] top-0 left-0 h-screen bg-white duration-300 z-10">
+        <AiOutlineClose size={30} className="absolute right-4 top-4 cursor-pointer"/>
+      </div>
     </div>
 
   );
