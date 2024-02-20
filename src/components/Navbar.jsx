@@ -1,6 +1,9 @@
 import React from "react";
-import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
-import { BsFillCartFill } from 'react-icons/bs'
+import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose, AiFillTag } from "react-icons/ai";
+import { BsFillCartFill, BsFillSaveFill } from 'react-icons/bs'
+import { TbTruckDelivery } from 'react-icons/tb'
+import { MdFavorite, MdHelp } from 'react-icons/md'
+import { FaWallet, FaUserFriends } from 'react-icons/fa'
 
 const Navbar = () => {
   return (
@@ -35,6 +38,18 @@ const Navbar = () => {
       {/* side drawer menu */}
       <div className="absolute w-[300px] top-0 left-0 h-screen bg-white duration-300 z-10">
         <AiOutlineClose size={30} className="absolute right-4 top-4 cursor-pointer"/>
+        <h2 className="text-2xl p-4">Best <span className="font-bold">Eats</span></h2>
+        <nav>
+            <ul className="flex flex-col p-4 text-gray-800">
+                <li className="flex items-center text-xl py-4"><TbTruckDelivery size={25} className="mr-4"/> Order</li>
+                <li className="flex items-center text-xl py-4"><MdFavorite size={25} className="mr-4"/> Favorites</li>
+                <li className="flex items-center text-xl py-4"><FaWallet size={25} className="mr-4"/> Wallet</li>
+                <li className="flex items-center text-xl py-4"><MdHelp size={25} className="mr-4"/> Help</li>
+                <li className="flex items-center text-xl py-4"><AiFillTag size={25} className="mr-4"/> Promotions</li>
+                <li className="flex items-center text-xl py-4"><BsFillSaveFill size={25} className="mr-4"/> Best Ones</li>
+                <li className="flex items-center text-xl py-4"><FaUserFriends size={25} className="mr-4"/> Invite Friends</li>
+            </ul>
+        </nav>
       </div>
     </div>
 
