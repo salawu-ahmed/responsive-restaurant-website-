@@ -67,6 +67,8 @@ const Food = () => {
         </div>
 
         {/* filter by price */}
+        <div>
+
         <p className="font-bold text-gray-700">Filter By Price</p>
         <div className="flex justify-between max-w-[390px]">
           <button
@@ -93,6 +95,7 @@ const Food = () => {
           >
             $$$$
           </button>
+        </div>
           
         </div>
       </div>

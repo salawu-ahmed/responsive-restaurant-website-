@@ -4,8 +4,6 @@
 
 @layer base {
     button {
-         border: 1px solid black; 
-         border-radius: 20px;
-         padding: 8px;
+         @apply border border-black rounded-xl px-5 py-1
     }
 }
