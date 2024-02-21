@@ -35,7 +35,7 @@ const Food = () => {
           <div className="flex flex-wrap justify-between">
             <button
               className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1"
-              onClick={() => setFoods(foods)}
+              onClick={() => setFoods(data)}
             >
               All
             </button>
